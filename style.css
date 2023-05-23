@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 300px 350px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.div1{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 10px 10px 15px 1px lightblue;
+
+}
+.div1 h2{
+    margin: 10px;
+    font-weight: 500;
+}
+.percentage {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 40px;
+    margin: 40px 70px 20px 70px;
+    border-radius: 50%;
+}
+.div2{
+    background-color:hsl(0, 0%, 100%) ;
+    text-align: center;
+    padding: 35px;
+    box-shadow:  10px 10px 10px lightblue;
+}
+.div2 h5{
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    
+}
+.list{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.5fr;
+    justify-content: space-between;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    padding: 6px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.list:nth-child(1) {
+    background-color: hsla(0, 100%, 67%,0.07);
+    color: hsl(0, 100%, 67%) ;
+}
+.list:nth-child(2) {
+    background-color: hsla(39, 100%, 56%,0.07);
+    color: hsl(39, 100%, 56%);
+}
+.list:nth-child(3) {
+    background-color: hsla(166, 100%, 37%,0.07);
+    color: hsl(166, 100%, 37%);
+}
+.list:nth-child(4) {
+    background-color: hsla(234, 85%, 45%,0.07);
+    color: hsl(234, 85%, 45%);
+}
+
+.button{
+    cursor: pointer;
+    color:hsl(0, 0%, 100%) ;
+    background-color: hsl(224, 30%, 27%);
+    padding: 10px 100px ;
+    border-radius: 23px;
+    margin: 20px 20px 20px 0;
+    font-weight: 800;
+    font-size: 13px;
+}
+.button:hover{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 2));
+    border-color: transparent;
+}
+
+.attribution {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    font-size: .8rem;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+}
+.attribution a{
+    color: black;
+}
+.attribution, 
+.attribution__link {
+    transition: .5s ease;
+}
+
+.attribution .attribution__link:hover {
+    color: #eee;
+}
+@media screen and (max-width: 425px) {
+    .container{
+        min-width: 87%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex: 1 2 auto;
+    }
+    .div1{
+        min-width: 5%;
+        margin-top: -10px;
+    }
+    .div2{
+        min-width: 50%;
+    }
+    
+  }
